@@ -3,7 +3,5 @@
 
 ## <a name="c1"></a>1. Introdução 
 
-Um grande volumes de afazeres podem se tornar um  problema para quando não se tem organização envolta nesse processo. 
-Diante disso, foi desenvolvida uma aplicação web para organização de tarefas de maneira gamificada e intuitíva. <br>
-O projeto contará com sistema de login do usuário para que o progresso não seja perdido ao atualizar a página. Nesse sentido, a aplicação estará conectada à um banco de dados que armazena o login, os quadros, as tarefas e seus estatus.
+A crescente demanda por produtividade no cotidiano tem evidenciado a importância da organização pessoal, especialmente diante de grandes volumes de tarefas. A ausência de um método estruturado pode comprometer significativamente a eficiência e o cumprimento de atividades. Diante desse cenário, desenvolveu-se uma aplicação web voltada à organização de tarefas, com uma proposta gamificada e interface intuitiva, visando estimular o engajamento e facilitar o gerenciamento diário. A aplicação dispõe de um sistema de autenticação de usuários, garantindo a preservação do progresso mesmo após atualizações da página. Para isso, está conectada a um banco de dados responsável pelo armazenamento seguro das informações de login, quadros, tarefas e seus respectivos status.
 
