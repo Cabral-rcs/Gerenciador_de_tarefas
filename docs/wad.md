@@ -5,3 +5,34 @@
 
 A crescente demanda por produtividade no cotidiano tem evidenciado a importância da organização pessoal, especialmente diante de grandes volumes de tarefas. A ausência de um método estruturado pode comprometer significativamente a eficiência e o cumprimento de atividades. Diante desse cenário, desenvolveu-se uma aplicação web voltada à organização de tarefas, com uma proposta gamificada e interface intuitiva, visando estimular o engajamento e facilitar o gerenciamento diário. A aplicação dispõe de um sistema de autenticação de usuários, garantindo a preservação do progresso mesmo após atualizações da página. Para isso, está conectada a um banco de dados responsável pelo armazenamento seguro das informações de login, quadros, tarefas e seus respectivos status.
 
+## Diagrama do banco de dados
+
+![Modelo_Banco](https://github.com/user-attachments/assets/220685af-c886-4429-b702-f1e7eca046a7)
+
+### Modelo físico e lógico:
+``` dbdiagram.io
+Table Usuario {
+  ID int
+  Email VARCHAR(800)
+  Senha INT
+}
+
+Table Quadro {
+  IDQuadro int
+  Tarefa int
+}
+
+Table Tarefa{
+  IDTarefa int
+  Nome VARCHAR(800)
+  Descricao VARCHAR(800)
+  Prazo date
+  Estatus int
+}
+
+ref Quadro: Quadro.Tarefa > Tarefa.IDTarefa
+ref Usuario: Usuario.ID > Quadro.IDQuadro
+
+```
+
+Desenvolvido em: dbdiagram.io
