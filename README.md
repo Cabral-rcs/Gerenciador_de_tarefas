@@ -42,3 +42,11 @@ meu-projeto/
 ├── server.js              # Arquivo principal que inicializa o servidor
 └── rest.http              # Teste de endpoints (opcional)
 ```
+
+## Como executar o programa: 
+1. Clone o repositório para alguma IDE
+2. Insira o comando "npm init -y" para criar automaticamente um arquivo package.json, no terminal
+3. Instale o Express: npm install express
+4. Inicie o programa: npm start
+5. Abra uma guia no navegador e coloque: http://localhost:3000/
+6. Programa rodando!
