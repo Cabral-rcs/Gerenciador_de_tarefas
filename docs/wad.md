@@ -10,7 +10,7 @@ A crescente demanda por produtividade no cotidiano tem evidenciado a importânci
 ![Modelo_Banco](https://github.com/user-attachments/assets/220685af-c886-4429-b702-f1e7eca046a7)
 
 ### Modelo físico e lógico:
-``` PostgreSQL
+``` sql
 -- Tabela de usuários
 CREATE TABLE Usuario (
   ID SERIAL PRIMARY KEY,
