@@ -10,29 +10,29 @@ A crescente demanda por produtividade no cotidiano tem evidenciado a importânci
 ![Modelo_Banco](https://github.com/user-attachments/assets/220685af-c886-4429-b702-f1e7eca046a7)
 
 ### Modelo físico e lógico:
-``` dbdiagram.io
-Table Usuario {
-  ID int
-  Email VARCHAR(800)
-  Senha INT
-}
+``` PostgreSQL
+-- Tabela de usuários
+CREATE TABLE Usuario (
+  ID SERIAL PRIMARY KEY,
+  Email VARCHAR(800) NOT NULL UNIQUE,
+  Senha INT NOT NULL
+);
 
-Table Quadro {
-  IDQuadro int
-  Tarefa int
-}
+-- Tabela de tarefas
+CREATE TABLE Tarefa (
+  IDTarefa SERIAL PRIMARY KEY,
+  Nome VARCHAR(800) NOT NULL,
+  Descricao VARCHAR(800),
+  Prazo DATE,
+  Estatus INT
+);
 
-Table Tarefa{
-  IDTarefa int
-  Nome VARCHAR(800)
-  Descricao VARCHAR(800)
-  Prazo date
-  Estatus int
-}
-
-ref Quadro: Quadro.Tarefa > Tarefa.IDTarefa
-ref Usuario: Usuario.ID > Quadro.IDQuadro
-
+-- Tabela de quadros (ligação entre usuários e tarefas)
+CREATE TABLE Quadro (
+  IDQuadro SERIAL PRIMARY KEY,
+  IDUsuario INT NOT NULL,
+  IDTarefa INT NOT NULL,
+  FOREIGN KEY (IDUsuario) REFERENCES Usuario(ID) ON DELETE CASCADE,
+  FOREIGN KEY (IDTarefa) REFERENCES Tarefa(IDTarefa) ON DELETE CASCADE
+);
 ```
-
-Desenvolvido em: dbdiagram.io
