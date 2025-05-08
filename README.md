@@ -38,8 +38,6 @@ meu-projeto/
 ├── .gitignore             # Arquivo para ignorar arquivos no Git
 ├── .env.example           # Arquivo de exemplo para variáveis de ambiente
 ├── jest.config.js         # Arquivo de configuração do Jest
-├── package-lock.json      # Gerenciador de dependências do Node.js
-├── package.json           # Gerenciador de dependências do Node.js
 ├── readme.md              # Documentação do projeto (Markdown)
 ├── server.js              # Arquivo principal que inicializa o servidor
 └── rest.http              # Teste de endpoints (opcional)
